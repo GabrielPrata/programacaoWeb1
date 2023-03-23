@@ -1,0 +1,29 @@
+/* ---- reset ---- */
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/028/660/819/large/ryan-konieczka-total.jpg?1595129802");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- particles.js container ---- */
+#particles-js2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+    background-image: url("https://images2.minutemediacdn.com/image/fetch/c_fill,g_auto,f_auto,h_1600,w_3840/https%3A%2F%2Fdorksideoftheforce.com%2Ffiles%2F2021%2F12%2FYoda-stands-in-an-empty-Jedi-Council-room-looking-out-the-window..jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}

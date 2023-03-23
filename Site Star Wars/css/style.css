@@ -1,0 +1,286 @@
+@font-face {
+  font-family: titulo1;
+  src: url(../fonts/fonte1.otf)
+}
+
+.corTexto{
+	color: #ffdc4c !important;
+}
+
+.corTexto2{
+	color: #48D1CC;
+}
+
+.parallax1{
+  height: 90px !important;
+  z-index: -1 !important;
+}
+
+.parallax-container{
+	height: 80vh !important;
+}
+
+#titulo1{
+  font-family: titulo1;
+  color: #48D1CC;
+  width: 100% !important;
+  display: block;
+  margin-top: 20% !important;
+  font-size: 400%;
+}
+
+#logo{
+	height: 50px;
+	width: auto;
+	margin-top: 0.25em;
+}
+
+#carouselNaves .carousel-item img {
+	height: 100%;
+	max-height: 400px;
+}
+
+#carouselSiths .carousel-item img {
+	width: 400px !important;
+}
+
+#carouselSiths .carousel-item {
+	width: 400px !important;
+	height: 500px;
+}
+
+#carouselSiths{
+	height: 600px;
+	padding: 0;
+	margin: 0;
+}
+
+#tituloSith{
+	position: relative;
+	top: 0;
+}
+
+#carouselJedis{
+	height: 600px;
+	padding: 0;
+	margin: 0;
+}
+
+#carouselJedis .carousel-item {
+	width: 400px !important;
+	height: 500px;
+}
+
+#carouselJedis .carousel-item img {
+	width: 400px !important;
+}
+
+
+.conteudoNaves{
+	margin-right: 250px;
+}
+
+#carouselNaves{
+	padding: 100px 50px !important;
+	height: 475px;
+	padding: 0;
+	margin: 0;
+}
+
+.textoNaves{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24em;
+	color: #e0e0e0;
+
+}
+
+.nomeNaves{
+	color: #ffdc4c;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+
+}
+
+#naves{
+	height: 100vh !important;
+	padding-top: 1px;
+	margin: 0 !important;
+}
+
+#secaoSiths{
+	height: 100vh !important;
+}
+
+#secaoJedis{
+	height: 80vh;
+}
+
+.tituloSecoes{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#ultimosLancamentos{
+	margin-top: 10%;
+}
+
+nav{
+	position: fixed;
+	z-index: 100 !important;
+}
+
+#logoFooter{
+	width: 250px;
+}
+
+h5 {
+	font-family: titulo1;
+	text-transform: uppercase;
+}
+
+/* Responsivo */
+@media only screen and (max-width : 600px) {
+	#carouselNaves .carousel-item img {
+		width: 100%;
+		position: relative;
+	}
+	.conteudoNaves{
+		position: relative;
+	}
+
+	#carouselNaves{
+		padding: 150px 50px !important;
+		height: 600px;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#carouselSiths .carousel-item img {
+		width: 300px !important;
+	}
+	
+	#carouselSiths .carousel-item {
+		width: 300px !important;
+		height: 500px;
+	}
+	
+	#carouselSiths{
+		height: 600px;
+		padding: 0;
+		margin: 50px 0px 0px 0px;
+	}
+	
+	#tituloSith{
+		position: relative;
+		top: 0;
+	}
+	
+	#carouselJedis{
+		height: 600px;
+		padding: 0;
+		margin: 50px 0px 0px 0px;
+	}
+	
+	#carouselJedis .carousel-item {
+		width: 300px !important;
+		height: 500px;
+	}
+	
+	#carouselJedis .carousel-item img {
+		width: 300px !important;
+	}
+
+}
+
+/* Configurações do fundo animado 1 */
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {    
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+.background-container{
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+}
+
+.stars {
+ background: black url(../img/estrelas.png) repeat;
+ position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+}
+
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("../img/efeito.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 15s linear infinite;
+  -ms-animation:move-background 15s linear infinite;
+  -o-animation:move-background 15s linear infinite;
+  -webkit-animation:move-background 15s linear infinite;
+  animation:move-background 15s linear infinite;
+	
+}
+
+.clouds{
+	width:10000px;
+	height: 100%;
+	background: transparent url("../img/nuvens.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+   -moz-animation:move-background 60s linear infinite;
+  -ms-animation:move-background 60s linear infinite;
+  -o-animation:move-background 60s linear infinite;
+  -webkit-animation:move-background 60s linear infinite;
+  animation:move-background 60s linear infinite;
+}
